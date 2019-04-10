@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <style>
+        html,
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2015/07/02/10/07/audience-828584_960_720.jpg");
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .keys {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .key {
+            display: inline-block;
+            position: relative;
+            border-top: 1em solid black;
+            border-bottom: 0.5em solid black;
+            border-left: 0.5em solid black;
+            border-right: 0.5em solid black;
+            width: 10em;
+            height: 40em;
+            text-align: center;
+            background: rgba(225, 225, 225, 0.6);
+            transition: all 0.5s ease;
+        }
+
+        .key:nth-child(even) {
+            border-top: 5em solid black;
+        }
+
+        .key:hover {
+            background: rgba(20, 50, 80, 0.8);
+            transition: all 0.5s ease;
+        }
+
+        .key kbd {
+            position: absolute;
+            display: block;
+            font-weight: bold;
+            color: #000;
+            font-size: 2em;
+            left: 0;
+            right: 0;
+            bottom: 1em;
+        }
+
+        .key .sound {
+            position: absolute;
+            color: blue;
+            left: 0;
+            right: 0;
+            bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="keys">
+        <div class="key">
+            <kbd>A</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>S</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>D</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>F</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>G</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>H</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>J</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>K</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div class="key">
+            <kbd>L</kbd>
+            <span class="sound">Clap</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -22,7 +22,6 @@ class App extends PureComponent {
                 return response.json();
             })
             .then(names => {
-                //this.names = names;
                 this.setState({ filteredNames: names });
             });
     }
@@ -47,13 +46,28 @@ class App extends PureComponent {
                                 .filter(name =>
                                     name
                                         .toUpperCase()
-                                        .includes(
+                                        .startsWith(
                                             this.state.value.toUpperCase()
                                         )
                                 )
                                 .map((name, i) => (
                                     <CollectionItem key={name + i} href="#">
-                                        {name}
+                                        {name.split("").map((letter, i) => {
+                                            return (
+                                                <span
+                                                    className={
+                                                        i <=
+                                                        this.state.value
+                                                            .length -
+                                                            1
+                                                            ? "highlighted"
+                                                            : null
+                                                    }
+                                                >
+                                                    {letter}
+                                                </span>
+                                            );
+                                        })}
                                     </CollectionItem>
                                 ))}
                         </Collection>
