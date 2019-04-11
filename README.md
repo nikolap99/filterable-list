@@ -4,7 +4,8 @@
 ## Live: http://filterable-list.netlify.com
 [<img src="https://github.com/nikolap99/filterable-list/blob/master/filterable.png">](http://filterable-list.netlify.com)
 
-<br/>
+
+
 ## Install node_modules
 ### `npm install`
 ## Start the server
